@@ -13,7 +13,7 @@ Experience the forefront of blockchain, open-source collaboration, and AI accoun
 ## Blockmesh CLI Node Setup Guide
 Run this to setup your Blockmesh Node
 ```
-[ -f setup.sh ] && rm setup.sh; wget https://raw.githubusercontent.com/Widiskel/blockmesh-node-setup/refs/heads/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh || echo "Error: setup.sh could not be downloaded."
+[ -f setup.sh ] && rm setup.sh; wget https://raw.githubusercontent.com/Widiskel/blockmesh-node-setup/refs/heads/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh || echo "Error: Failed to install from setup.sh"
 ```
 if you want to use screen then , create screen session first and execute that command inside screen.
 
