@@ -71,6 +71,7 @@ run() {
         echo -e "\nEnter your credentials:"
         read -p "Email: " EMAIL
         read -s -p "Password: " PASSWORD
+        cd $NODEPATH
         $NODENAME-cli --email "$EMAIL" --password "$PASSWORD"
     else
         echo "LFG"
