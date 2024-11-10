@@ -28,6 +28,10 @@ setup() {
         echo "Created the '$NODENAME' directory."
     fi
     cd $NODENAME
+
+    if [ -d "target" ]; then
+        rm -rf target
+    fi
 }
 
 installRequirements(){
@@ -46,8 +50,8 @@ installRequirements(){
         echo "Unknown architecture: $ARCH. Exiting."
         exit 1
     fi
+    
     tar -xvzf "$NODENAME-cli.tar.gz"
-    cd $NODEPATH
     echo "$NODENAME CLI Node Installed"
 }
 
