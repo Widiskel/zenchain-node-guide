@@ -41,18 +41,23 @@ installRequirements(){
     if [ "$ARCH" == "arm64" ]; then
         echo "Architecture is arm64, downloading arm64 version."
         curl -L -o $NODENAME-cli.tar.gz https://github.com/block-mesh/block-mesh-monorepo/releases/download/v0.0.352/blockmesh-cli-aarch64-unknown-linux-gnu.tar.gz
-        NODEPATH="~/node/$NODENAME/target/aarch64-unknown-linux-gnu/release"
+        NODEPATH="$HOME/node/$NODENAME/target/aarch64-unknown-linux-gnu/release"
     elif [ "$ARCH" == "x86_64" ]; then
         echo "Architecture is x86_64, downloading amd64 version."
         curl -L -o $NODENAME-cli.tar.gz https://github.com/block-mesh/block-mesh-monorepo/releases/download/v0.0.352/blockmesh-cli-x86_64-unknown-linux-gnu.tar.gz
-        NODEPATH="~/node/$NODENAME/target/x86_64-unknown-linux-gnu/release"
+        NODEPATH="$HOME/node/$NODENAME/target/x86_64-unknown-linux-gnu/release"
     else
         echo "Unknown architecture: $ARCH. Exiting."
         exit 1
     fi
     
-    tar -xvzf "$NODENAME-cli.tar.gz"
-    echo "$NODENAME CLI Node Installed"
+    echo "Extracting $NODENAME-cli.tar.gz..."
+    if tar -xvzf "$NODENAME-cli.tar.gz"; then
+        echo "$NODENAME CLI Node Installed Successfully"
+    else
+        echo "Extraction failed. Exiting."
+        exit 1
+    fi
 }
 
 finish() {
@@ -68,20 +73,19 @@ finish() {
     cat help.txt
 }
 
-
 run() {
     read -p "Do you want to run it? (y/n): " response
     if [[ $response == "y" ]]; then
         echo -e "\nEnter your credentials:"
         read -p "Email: " EMAIL
         read -s -p "Password: " PASSWORD
+        echo
         cd $NODEPATH
-        $NODENAME-cli --email "$EMAIL" --password "$PASSWORD"
+        ./$NODENAME-cli --email "$EMAIL" --password "$PASSWORD"
     else
         echo "LFG"
     fi
 }
-
 
 setup
 installRequirements
