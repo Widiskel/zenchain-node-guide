@@ -12,7 +12,7 @@ setup() {
     echo "Updating & Upgrading Packages..."
     sudo apt update -y && sudo apt upgrade -y
 
-    cd ~
+    cd $HOME
     if [ -d "node" ]; then
         echo "The 'node' directory already exists."
     else
