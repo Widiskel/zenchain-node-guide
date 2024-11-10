@@ -11,7 +11,7 @@ Experience the forefront of blockchain, open-source collaboration, and AI accoun
 
 
 ## Blockmesh CLI Node Setup Guide
-Run this to setup your Dria Node
+Run this to setup your Blockmesh Node
 ```
 [ -f setup.sh ] && rm setup.sh; wget https://raw.githubusercontent.com/Widiskel/blockmesh-node-setup/refs/heads/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh || echo "Error: setup.sh could not be downloaded."
 ```
