@@ -9,7 +9,7 @@ ZenChain is the first fully decentralized and EVM-compatible Bitcoin L1 solution
 ## Zenchian Self Hosted Node Setup
 Run this to setup your zenchain self-hosted Node
 ```
-cd ~ && [ -f setup.sh ] && rm setup.sh; wget https://raw.githubusercontent.com/Widiskel/zenchain-node-guid/refs/heads/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh || echo "Error: Failed to install from setup.sh"
+cd ~ && [ -f setup.sh ] && rm setup.sh; wget https://raw.githubusercontent.com/Widiskel/zenchain-node-guide/refs/heads/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh || echo "Error: Failed to install from setup.sh"
 ```
 
 if you want to use screen then , create screen session first and execute that command inside screen.
