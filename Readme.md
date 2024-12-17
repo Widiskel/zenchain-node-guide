@@ -1,28 +1,19 @@
 
-## BlockMesh Network Node
+## Zenchain 
 
-![Blockmesh](assets/img1.png)
+![Zenchian](assets/img1.png)
 
-BlockMesh Network allows you to generate passive income from your excessive bandwidth
-
-BlockMesh Network: an open-source, secure network for ethical AI oversight with passive income opportunities.
-
-Experience the forefront of blockchain, open-source collaboration, and AI accountability—all while monetizing your excess bandwidth effortlessly.
+ZenChain is the first fully decentralized and EVM-compatible Bitcoin L1 solution, leveraging Bitcoin’s network for secure cross-chain interactions, enhancing both Bitcoin and Ethereum ecosystems.
 
 
-## Blockmesh CLI Node Setup Guide
-Run this to setup your Blockmesh Node
+## Zenchian Self Hosted Node Setup
+Run this to setup your zenchain self-hosted Node
 ```
-[ -f setup.sh ] && rm setup.sh; wget https://raw.githubusercontent.com/Widiskel/blockmesh-node-setup/refs/heads/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh || echo "Error: Failed to install from setup.sh"
+cd ~ && [ -f setup.sh ] && rm setup.sh; wget https://raw.githubusercontent.com/Widiskel/blockmesh-node-setup/refs/heads/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh || echo "Error: Failed to install from setup.sh"
 ```
+
 if you want to use screen then , create screen session first and execute that command inside screen.
 
-
-## Blockmesh Browser Extension
-
-You can also install blockmesh node extension to run blockmesh on your browser
-
-Link : https://chromewebstore.google.com/detail/blockmesh-network/obfhoiefijlolgdmphcekifedagnkfjp
 
 ## SUPPORT
 
