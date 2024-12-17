@@ -186,6 +186,9 @@ finish() {
     echo "Your $NODENAME path is on $NODEPATH"
     echo ""
     echo "Check your node logs with : 'docker logs -f zenchain'"
+    echo "Now, go to Validator Dashboard: https://node.zenchain.io/#/staking"
+    echo "Cick Stake > Click To Your Account > Click Become a Validator > Input any amount you want to stake > Click Start Staking"
+    echo "DONE LFG"
        
 }
 
